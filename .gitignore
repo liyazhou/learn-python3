@@ -52,3 +52,11 @@ MANIFEST
 .mr.developer.cfg
 .project
 .pydevproject
+
+.idea/learn-python3.iml
+
+.idea/misc.xml
+
+.idea/workspace.xml
+
+.idea/modules.xml
