@@ -9,3 +9,7 @@ for name in names:
 # 打印数字 0 - 9
 for x in range(10):
     print(x)
+for test in names:
+    print(test)
+for i in range(5):
+    print(i)

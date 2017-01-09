@@ -13,3 +13,12 @@ elif age >= 6:
     print('teenager')
 else:
     print('kid')
+
+snum = input('input your number: ')
+num = int(snum)
+if num >= 10:
+    print('>10')
+elif num >= 5:
+    print('>5')
+else:
+    print('else')

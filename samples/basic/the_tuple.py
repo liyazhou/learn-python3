@@ -10,4 +10,9 @@ print('classmates[2] =', classmates[2])
 print('classmates[-1] =', classmates[-1])
 
 # cannot modify tuple:
-classmates[0] = 'Adam'
+# classmates[0] = 'Adam'
+print("--------")
+
+dress = (1, 1, 1, 2, 2, 3)
+print(dress.count(3))
+print(dress.index(2, 0, -1))

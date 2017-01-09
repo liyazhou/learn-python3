@@ -14,5 +14,11 @@ acc = 1
 n = 1
 while n <= 100:
     acc = acc * n
-    n = n + 1
+    n += 1
 print(acc)
+test = 1
+while n <= 200:
+    n += 1
+    test = n
+print(test)
+print(n)
