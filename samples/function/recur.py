@@ -26,6 +26,7 @@ def fact2(n):
 
 print(fact2(5))
 
+
 # 利用递归函数移动汉诺塔:
 def move(n, a, b, c):
     if n == 1:
