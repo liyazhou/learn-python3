@@ -3,10 +3,18 @@
 
 from collections import Iterable, Iterator
 
+
 def g():
     yield 1
     yield 2
     yield 3
+
+
+testg = g()
+print("----test yield g---")
+print(next(testg))
+print(next(testg))
+print(next(testg))
 
 print('Iterable? [1, 2, 3]:', isinstance([1, 2, 3], Iterable))
 print('Iterable? \'abc\':', isinstance('abc', Iterable))
@@ -35,6 +43,12 @@ print(next(it))
 print(next(it))
 print(next(it))
 print(next(it))
+
+print('---test iter-----')
+testIter = iter([1, 2, 3])
+print(next(testIter))
+print(next(testIter))
+print(next(testIter))
 
 d = {'a': 1, 'b': 2, 'c': 3}
 
