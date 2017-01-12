@@ -76,3 +76,13 @@ for i, value in enumerate(['A', 'B', 'C']):
 print('iter [(1, 1), (2, 4), (3, 9)]:')
 for x, y in [(1, 1), (2, 4), (3, 9)]:
     print(x, y)
+
+for i in [1, 2, 3, 4]:
+    pass
+it = iter([1, 2, 3, 4])
+while True:
+    try:
+        x = next(it)
+        print(x)
+    except StopIteration:
+        break
