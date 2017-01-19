@@ -34,8 +34,6 @@ print('d is Animal?', isinstance(d, Animal))
 print('d is Dog?', isinstance(d, Dog))
 print('d is Cat?', isinstance(d, Cat))
 
-run_twice(c)
-
 
 class Fruit(object):
     def run(self):

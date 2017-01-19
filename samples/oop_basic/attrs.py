@@ -1,25 +1,46 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-class MyObject(object):
 
+class MyObject(object):
     def __init__(self):
         self.x = 9
 
     def power(self):
         return self.x * self.x
 
+
 obj = MyObject()
 
-print('hasattr(obj, \'x\') =', hasattr(obj, 'x')) # 有属性'x'吗？
-print('hasattr(obj, \'y\') =', hasattr(obj, 'y')) # 有属性'y'吗？
-setattr(obj, 'y', 19) # 设置一个属性'y'
-print('hasattr(obj, \'y\') =', hasattr(obj, 'y')) # 有属性'y'吗？
-print('getattr(obj, \'y\') =', getattr(obj, 'y')) # 获取属性'y'
-print('obj.y =', obj.y) # 获取属性'y'
+print('hasattr(obj, \'x\') =', hasattr(obj, 'x'))  # 有属性'x'吗？
+print('hasattr(obj, \'y\') =', hasattr(obj, 'y'))  # 有属性'y'吗？
+setattr(obj, 'y', 19)  # 设置一个属性'y'
+print('hasattr(obj, \'y\') =', hasattr(obj, 'y'))  # 有属性'y'吗？
+print('getattr(obj, \'y\') =', getattr(obj, 'y'))  # 获取属性'y'
+print('obj.y =', obj.y)  # 获取属性'y'
 
-print('getattr(obj, \'z\') =',getattr(obj, 'z', 404)) # 获取属性'z'，如果不存在，返回默认值404
+print('getattr(obj, \'z\') =', getattr(obj, 'z', 404))  # 获取属性'z'，如果不存在，返回默认值404
 
-f = getattr(obj, 'power') # 获取属性'power'
+f = getattr(obj, 'power')  # 获取属性'power'
 print(f)
 print(f())
+
+
+class MyObject2(object):
+    def __init__(self):
+        self.x = 8
+
+    def power(self):
+        return self.x * self.x
+
+
+obj2 = MyObject2()
+
+print(hasattr(obj2, 'x'))
+print(hasattr(obj2, 'y'))
+setattr(obj2, 'y', 10)
+print(getattr(obj2, 'y'))
+print(getattr(obj2, 'z', 202))
+m = getattr(obj2, 'power')
+print(m)
+print(m())
