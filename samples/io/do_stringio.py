@@ -4,6 +4,7 @@
 from io import StringIO
 
 # write to StringIO:
+
 f = StringIO()
 f.write('hello')
 f.write(' ')
@@ -17,3 +18,10 @@ while True:
     if s == '':
         break
     print(s.strip())
+
+f = StringIO('水面细风生，\n菱歌慢慢声。\n客亭临小市，\n灯火夜妆明。')
+print('...')
+print(f.getvalue())
+print('...')
+for line in f.readlines():
+    print(line.strip())

@@ -1,7 +1,6 @@
 *.py[cod]
 
 test.db
-test.txt
 sina.html
 
 # C extensions
@@ -42,7 +41,6 @@ nosetests.xml
 Icon?
 ehthumbs.db
 Thumbs.db
-dist
 MANIFEST
 
 # Translations
