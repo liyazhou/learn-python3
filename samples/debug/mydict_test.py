@@ -3,12 +3,14 @@
 
 import unittest
 
-from mydict import Dict
+from samples.debug.mydict import Dict
+
 
 class TestDict(unittest.TestCase):
-
     def test_init(self):
         d = Dict(a=1, b='test')
+        self.assertEqual(d['a'], 1)
+        self.assertEqual(d['b'], 'test')
         self.assertEqual(d.a, 1)
         self.assertEqual(d.b, 'test')
         self.assertTrue(isinstance(d, dict))
@@ -34,6 +36,6 @@ class TestDict(unittest.TestCase):
         with self.assertRaises(AttributeError):
             value = d.empty
 
+
 if __name__ == '__main__':
     unittest.main()
-
