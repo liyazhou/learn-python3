@@ -2,11 +2,27 @@
 class FooError(ValueError):
     pass
 
+
 def foo(s):
     n = int(s)
-    if n==0:
+    if n == 0:
         raise FooError('invalid value: %s' % s)
     return 10 / n
 
-foo('0')
 
+# foo('0')
+
+
+class EasyError(ValueError):
+    pass
+
+
+def easy(s):
+    n = int(s)
+    if n == 0:
+        raise EasyError('easy error: %s' % s)
+    return 10 / n
+
+
+print(easy('1'))
+easy('0')
