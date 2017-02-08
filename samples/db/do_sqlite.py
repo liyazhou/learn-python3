@@ -10,9 +10,9 @@ conn = sqlite3.connect('test.db')
 # 创建一个Cursor:
 cursor = conn.cursor()
 # 执行一条SQL语句，创建user表:
-cursor.execute('create table user (id varchar(20) primary key, name varchar(20))')
+cursor.execute('CREATE TABLE user (id VARCHAR(20) PRIMARY KEY, name VARCHAR(20))')
 # 继续执行一条SQL语句，插入一条记录:
-cursor.execute('insert into user (id, name) values (\'1\', \'Michael\')')
+cursor.execute('INSERT INTO user (id, name) VALUES (\'1\', \'Michael\')')
 # 通过rowcount获得插入的行数:
 print('rowcount =', cursor.rowcount)
 # 关闭Cursor:
@@ -26,7 +26,7 @@ conn.close()
 conn = sqlite3.connect('test.db')
 cursor = conn.cursor()
 # 执行查询语句:
-cursor.execute('select * from user where id=?', '1')
+cursor.execute('SELECT * FROM user WHERE id=?', '1')
 # 获得查询结果集:
 values = cursor.fetchall()
 print(values)
